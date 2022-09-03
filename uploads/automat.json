@@ -1,0 +1,150 @@
+{
+  "States": [
+    "Start",
+    "1M",
+    "2M",
+    "3M"
+    ],
+  "Transitions": {
+    "Start": {
+      "Knopf1": {
+        "Output": [
+          "Tonfolge1"
+        ],
+        "NextState": 0
+      },
+      "Knopf2": {
+        "Output": [
+          "Tonfolge2"
+        ],
+        "NextState": 0
+      },
+      "Knopf3": {
+        "Output": [
+          "Tonfolge2"
+        ],
+        "NextState": 0
+      },
+      "Münze1": {
+        "Output": [
+          "LED1 an"
+        ],
+        "NextState": 1
+      },
+      "Münze2": {
+        "Output": [
+          "LED1 an",
+          "LED2 an"
+        ],
+        "NextState": 2
+      }
+    },
+    "1M": {
+      "Knopf1": {
+        "Output": [
+          "Item1",
+          "LED1 aus"
+        ],
+        "NextState": 0
+      },
+      "Knopf2": {
+        "Output": [
+          "Item2",
+          "LED1 aus"
+        ],
+        "NextState": 0
+      },
+      "Knopf3": {
+        "Output": [
+          "Item3",
+          "LED1 aus"
+        ],
+        "NextState": 0
+      },
+      "Münze1": {
+        "Output": [
+          "LED2 an"
+        ],
+        "NextState": 2
+      },
+      "Münze2": {
+        "Output": [
+          "LED2 an",
+          "LED3 an"
+        ],
+        "NextState": 3
+      }
+    },
+    "2M": {
+      "Knopf1": {
+        "Output": [
+          "Item1",
+          "LED2 aus"
+        ],
+        "NextState": 1
+      },
+      "Knopf2": {
+        "Output": [
+          "Item2",
+          "LED2 aus"
+        ],
+        "NextState": 1
+      },
+      "Knopf3": {
+        "Output": [
+          "Item3",
+          "LED2 aus"
+        ],
+        "NextState": 1
+      },
+      "Münze1": {
+        "Output": [
+          "LED3 an"
+        ],
+        "NextState": 3
+      },
+      "Münze2": {
+        "Output": [
+          "LED3 an",
+          "Münze1"
+        ],
+        "NextState": 3
+      }
+    },
+    "3M": {
+      "Knopf1": {
+        "Output": [
+          "Item1",
+          "LED3 aus"
+        ],
+        "NextState": 2
+      },
+      "Knopf2": {
+        "Output": [
+          "Item2",
+          "LED3 aus"
+        ],
+        "NextState": 2
+      },
+      "Knopf3": {
+        "Output": [
+          "Item3",
+          "LED3 aus"
+        ],
+        "NextState": 2
+      },
+      "Münze1": {
+        "Output": [
+          "Münze1"
+        ],
+        "NextState": 3
+      },
+      "Münze2": {
+        "Output": [
+          "Münze2"
+        ],
+        "NextState": 3
+      }
+    }
+  }
+}
