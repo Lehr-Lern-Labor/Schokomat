@@ -42,7 +42,7 @@ def clean_up_exit(*args):
  
 def start_new_automat():
     global automat, current_state, new_automat
-    neuer_automat = read_json("/home/pi/schokomat/uploads/automat.json")
+    neuer_automat = read_json("/home/Schokomat/Schokomat/uploads/automat.json")
     validation = valid_automata(neuer_automat, valid_inputs, valid_outputs)
     print("Validation automat " + validation)
     if validation == "succeeded":

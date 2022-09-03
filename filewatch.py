@@ -14,7 +14,7 @@ def start_watch(start_funktion):
     global notifier
     # watch manager
     wm = pyinotify.WatchManager()
-    wm.add_watch('/home/pi/schokomat/uploads/automat.json', pyinotify.ALL_EVENTS, rec=True)
+    wm.add_watch('/home/Schokomat/Schokomat/uploads/automat.json', pyinotify.ALL_EVENTS, rec=True)
 
     # event handler
     eh = MyEventHandler(start_funktion)
