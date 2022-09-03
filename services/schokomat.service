@@ -1,0 +1,13 @@
+[Unit]
+Description=schokomat Service
+After=multi-user.target
+
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/python3 /home/Schokomat/Schokomat/main.py
+Restart=always
+WorkingDirectory=/home/Schokomat/Schokomat/
+
+[Install]
+WantedBy=multi-user.target
